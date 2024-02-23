@@ -1,0 +1,388 @@
+/******* START VARIABLES ******/
+:root {
+  --main-color: #088178;
+}
+/******** END VARIABLES *******/
+/****** START GLOBAL RULES ******/
+body {
+  font-family: "Quicksand", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+/******* END GLOBAL RULES ******/
+/******* START COMPONENTS ******/
+/*>>> FOR PRODUCTS & NEW ARRIVALS <<<*/
+.price,
+.cart-icon {
+  color: var(--main-color);
+  cursor: pointer;
+}
+.star-icon {
+  color: #f3b519;
+  cursor: pointer;
+}
+.order {
+  background-color: #08817925;
+  border-color: #08817925 !important;
+}
+.new-arrivals img,
+.products img {
+  cursor: pointer;
+}
+/******** END COMPONENTS ******/
+/********* START NAVBAR *******/
+nav {
+  background-color: #e3e6f3;
+  box-shadow: 0px 0px 10px;
+  position: relative;
+  z-index: 1;
+}
+nav div div ul li:first-child a {
+  color: var(--main-color);
+}
+nav ul li:not(:first-child) a {
+  color: rgb(61, 61, 61);
+}
+nav ul li a:hover {
+  color: var(--main-color) !important;
+}
+.bag-counter {
+  width: fit-content;
+  cursor: pointer;
+}
+.bag-counter::before {
+  content: attr(data-before);
+  position: absolute;
+  top: -12px;
+  right: -15px;
+  width: 18px;
+  height: 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 13px;
+}
+/********* END NAVBAR ********/
+/******* START LANDING *******/
+.landing {
+  height: calc(100vh - 82px);
+  background-color: #e3e6f3;
+  background-image: url(../imgs/hero4.png);
+  background-size: 100% 140%;
+  background-repeat: no-repeat;
+  background-position: right 20%;
+  z-index: 0;
+  overflow-x: hidden;
+}
+.landing .content {
+  height: calc(100vh - 85px);
+}
+.landing .content .button {
+  background-image: url(../imgs/button.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 43px;
+}
+.landing .content h1,
+.landing .content h2 {
+  font-size: 3.5rem;
+}
+.landing .content h2,
+.landing .content .button a {
+  color: var(--main-color);
+}
+@media (max-width: 991px) {
+  .landing {
+    background-size: 125% 140%;
+  }
+  .landing .content h1,
+  .landing .content h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .landing {
+    background-size: 200% 140%;
+  }
+  .landing::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e3e6f3de;
+    z-index: -2;
+  }
+}
+@media (max-width: 350px) {
+  .landing .content h1,
+  .landing .content h2 {
+    font-size: 2rem;
+  }
+}
+/******** END LANDING *******/
+/******* START FEATURES ******/
+div.features {
+  position: relative;
+  z-index: -2;
+}
+.features .container .holder {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px 10px;
+}
+.features .container .holder .box {
+  width: 160px;
+}
+.features .container .holder .box .content {
+  width: 140px;
+  height: 25px;
+}
+.features .cont1 {
+  background-color: #fddde4;
+}
+.features .cont2 {
+  background-color: #cdebbc;
+}
+.features .cont3 {
+  background-color: #d1e8f2;
+}
+.features .cont4 {
+  background-color: #cdd4f8;
+}
+.features .cont5 {
+  background-color: #f6dbf6;
+}
+.features .cont6 {
+  background-color: #fff2e5;
+}
+.features .container .holder .box .content h6 {
+  color: var(--main-color);
+}
+/******** END FEATURES *******/
+/**** NO SPECIAL CSS STYLE FOR PRODUCTS ****/
+/***** START REPAIR SERVICES ******/
+.repair-services {
+  background-image: url(../imgs/b2.jpg);
+  background-size: cover;
+  background-position: right center;
+}
+.repair-services span {
+  color: #ef3636;
+}
+.repair-services button {
+  transition: 0.3s;
+}
+.repair-services button:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+/****** END REPAIR SERVICES ******/
+/*** NO SPECIAL CSS STYLE FOR NEW ARRIVALS ***/
+/********* START SLIDES *********/
+.slides .slide1 {
+  background-image: url(../imgs/b17.jpg);
+}
+.slides .slide2 {
+  background-image: url(../imgs/b10.jpg);
+}
+.slides .slide3 {
+  background-image: url(../imgs/b7.jpg);
+}
+.slides .slide4 {
+  background-image: url(../imgs/b4.jpg);
+}
+.slides .slide5 {
+  background-image: url(../imgs/b18.jpg);
+}
+.slides .big-box {
+  background-size: cover;
+  background-position: 50% 90%;
+}
+.slides .small-box {
+  background-size: cover;
+  background-position: 50% 30%;
+}
+.slides .small-box p {
+  color: #76fff6;
+}
+.slides .big-box button {
+  transition: 0.3s;
+}
+.slides .big-box button:hover {
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+}
+@media (max-width: 576px) {
+  .slides .big-box,
+  .small-box {
+    background-position: 70% 90%;
+    padding: 15px 0px 15px 15px !important;
+  }
+}
+/********** END SLIDES *********/
+/********* START SIGN UP ********/
+.sign-up {
+  background-color: #041e42;
+}
+.sign-up .info p span {
+  color: #ffbd35;
+}
+.sign-up .form input[type="email"] {
+  width: 320px;
+  height: 50px;
+}
+.sign-up .form input[type="email"]:focus {
+  outline: none;
+  caret-color: var(--main-color);
+}
+.sign-up .form input[type="submit"] {
+  background-color: var(--main-color);
+  width: 130px;
+}
+@media (max-width: 992px) {
+  .sign-up .info h2 {
+    font-size: 1.4rem !important;
+  }
+  .sign-up .form input[type="email"] {
+    max-width: 210px;
+    height: 45px;
+  }
+  .sign-up .form input[type="submit"] {
+    width: 90px;
+  }
+}
+/********* END SIGN UP ********/
+/******** START FOOTER ********/
+footer .row {
+  row-gap: 50px;
+}
+footer .follow-us i {
+  color: rgb(61, 61, 61);
+}
+footer .follow-us a .facebook:hover {
+  color: #1877f2;
+}
+footer .follow-us a .twitter:hover {
+  color: #1da1f2;
+}
+footer .follow-us a .instagram:hover {
+  color: #833ab4;
+}
+footer .follow-us a .pinterest:hover {
+  color: #e60023;
+}
+footer .follow-us a .youtube:hover {
+  color: #ff0000;
+}
+footer ul li {
+  padding: 8px 0;
+}
+footer ul li a {
+  color: rgb(24, 24, 24);
+}
+footer ul li a:hover {
+  color: var(--main-color);
+}
+footer h4 {
+  color: var(--main-color);
+}
+footer .app-part .app-img img {
+  border-color: var(--main-color) !important;
+}
+/********* END FOOTER ********/
+
+/*********** For Javascript ************/
+.itemslist {
+  width: 300px;
+  min-height: 92%;
+  background-color: #088178;
+  z-index: 9999;
+  right: -305px;
+  transition: 0.3s;
+  box-shadow: -3px 0px 5px;
+  text-align: center;
+  padding: 5px;
+}
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  cursor: pointer;
+}
+.itemdetails {
+  z-index: -2;
+  color: var(--main-color);
+}
+.itemdetailsimg {
+  width: 70px;
+}
+.orderinfo {
+  width: 210px;
+  right: -15px;
+  bottom: 26px;
+  border: 1px solid #fffab8;
+  background-color: #fffab8;
+  color: var(--main-color);
+  border-radius: 3px;
+  padding: 7px;
+  font-weight: bold;
+  z-index: 2;
+  transition: 0.2s;
+}
+.orderinfoarrow {
+  border-bottom: 10px solid transparent;
+  /* border-top: 10px solid #ffda35; */
+  border-top: 10px solid #fffab8;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  bottom: 22px;
+  right: 7px;
+  width: 10px;
+  height: 10px;
+}
+.orderinfomax {
+  width: 210px;
+  right: -15px;
+  bottom: 26px;
+  border: 1px solid #f32e2e;
+  background-color: #f32e2e;
+  color: white;
+  border-radius: 3px;
+  padding: 7px;
+  font-weight: bold;
+  z-index: 2;
+  transition: 0.2s;
+}
+.orderinfoarrowmax {
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid #f32e2e;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  bottom: 22px;
+  right: 7px;
+  width: 10px;
+  height: 10px;
+}
+.ordervalue {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.emptybag a:hover {
+  text-decoration: underline;
+}
+.checkout {
+  color: white;
+  background-color: transparent !important;
+  border-color: white;
+}
+.checkout:hover {
+  color: #088178;
+  background-color: white !important;
+}

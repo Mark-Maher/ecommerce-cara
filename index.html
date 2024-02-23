@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Work+Sans:wght@200;300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Cara</title>
+  </head>
+  <body>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg p-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="" /></a>
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+            <li class="nav-item px-2">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="ms-3 bag-counter position-relative fs-3">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- START LANDING -->
+    <div class="itemslist z-3 position-fixed p-5 rounded-3 d-flex flex-column">
+      <div>
+        <i class="fa-solid fa-circle-xmark text-white fs-3 close-btn"></i>
+      </div>
+      <div>
+        <h5 class="fw-bold text-white pt-1">Your Shopping Bag</h5>
+        <hr class="text-white border border-1 w-50 mx-auto opacity-100 my-0" />
+      </div>
+      <div class="flex-fill">
+        <div class="emptybag my-5 mx-2 text-white-50">
+          Your shopping bag is empty, Please go to Products Section to
+          <a class="text-warning fw-bold" href="#secproducts">Start Shopping</a>
+        </div>
+        <div class="itemsorder"></div>
+      </div>
+      <div class="ordervalue"></div>
+    </div>
+    <div class="landing position-relative">
+      <div class="container position-relative">
+        <div
+          class="content 100vh text-center d-flex flex-column justify-content-center align-items-center align-items-md-start"
+        >
+          <h4 class="fw-bolder">Trade-in-Offer</h4>
+          <h1 class="my-3 fw-bolder">Super value deals</h1>
+          <h2 class="fw-bolder">On all products</h2>
+          <p class="mt-4">Save more with coupons & up to 70% off!</p>
+          <div
+            class="mt-2 button fw-bold d-flex justify-content-center align-items-center"
+          >
+            <a href="#secproducts">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END LANDING -->
+    <!-- START FEATURES -->
+    <div class="features my-5">
+      <div class="container py-4">
+        <div class="owl-carousel holder d-grid">
+          <div
+            class="box p-3 mx-auto border border-1 rounded-1 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="imgs/f1.png" alt="" />
+            <div
+              class="content cont1 text-center d-flex justify-content-center"
+            >
+              <h6 class="fw-bold mt-1">Free Shipping</h6>
+            </div>
+          </div>
+          <div
+            class="box p-3 mx-auto border border-1 rounded-1 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="imgs/f2.png" alt="" />
+            <div
+              class="content cont2 text-center d-flex justify-content-center"
+            >
+              <h6 class="fw-bold mt-1">Online Order</h6>
+            </div>
+          </div>
+          <div
+            class="box p-3 mx-auto border border-1 rounded-1 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="imgs/f3.png" alt="" />
+            <div
+              class="content cont3 text-center d-flex justify-content-center"
+            >
+              <h6 class="fw-bold mt-1">Save Money</h6>
+            </div>
+          </div>
+          <div
+            class="box p-3 mx-auto border border-1 rounded-1 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="imgs/f4.png" alt="" />
+            <div
+              class="content cont4 text-center d-flex justify-content-center"
+            >
+              <h6 class="fw-bold mt-1">Promotions</h6>
+            </div>
+          </div>
+          <div
+            class="box p-3 mx-auto border border-1 rounded-1 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="imgs/f5.png" alt="" />
+            <div
+              class="content cont5 text-center d-flex justify-content-center"
+            >
+              <h6 class="fw-bold mt-1">Happy Sell</h6>
+            </div>
+          </div>
+          <div
+            class="box p-3 mx-auto border border-1 rounded-1 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="imgs/f6.png" alt="" />
+            <div
+              class="content cont6 text-center d-flex justify-content-center"
+            >
+              <h6 class="fw-bold mt-1">F24/7 Supports</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END FEATURES -->
+    <!-- START PRODUCTS -->
+    <div class="products my-5">
+      <div class="section-title text-center py-3">
+        <h1 class="fw-bold" id="secproducts">Featured Products</h1>
+        <h6 class="text-black-50">Summer Collection New Modern Design</h6>
+      </div>
+      <div class="container px-xl-5 wow" data-wow-duration="2s">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem1 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/p1.jpg"
+                class="card-img-top rounded-5 item1"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem1">adidas</p>
+                <h5 class="card-title my-1 fw-bold item1">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item1">29.99</div>
+                  <div
+                    class="order cditem1 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item1 forcheck"></p>
+                    <span class="position-absolute item1 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item1"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem2 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/p2.jpg"
+                class="card-img-top rounded-5 item2"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem2">adidas</p>
+                <h5 class="card-title my-1 fw-bold item2">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item2">24.99</div>
+                  <div
+                    class="order cditem2 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item2 forcheck"></p>
+                    <span class="position-absolute item2 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item2"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem3 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/p3.jpg"
+                class="card-img-top rounded-5 item3"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem3">adidas</p>
+                <h5 class="card-title my-1 fw-bold item3">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item3">19.99</div>
+                  <div
+                    class="order cditem3 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item3 forcheck"></p>
+                    <span class="position-absolute item3 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item3"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem4 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/p4.jpg"
+                class="card-img-top rounded-5 item4"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem4">adidas</p>
+                <h5 class="card-title my-1 fw-bold item4">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item4">25.99</div>
+                  <div
+                    class="order cditem4 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item4 forcheck"></p>
+                    <span class="position-absolute item4 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item4"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem5 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/p5.jpg"
+                class="card-img-top rounded-5 item5"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem5">adidas</p>
+                <h5 class="card-title my-1 fw-bold item5">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item5">30.99</div>
+                  <div
+                    class="order cditem5 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item5 forcheck"></p>
+                    <span class="position-absolute item5 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item5"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem6 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/p6.jpg"
+                class="card-img-top rounded-5 item6"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem6">adidas</p>
+                <h5 class="card-title my-1 fw-bold item6">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item6">32.99</div>
+                  <div
+                    class="order cditem6 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item6 forcheck"></p>
+                    <span class="position-absolute item6 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item6"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem7 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/p7.jpg"
+                class="card-img-top rounded-5 item7"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem7">adidas</p>
+                <h5 class="card-title my-1 fw-bold item7">Pants</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item7">30.99</div>
+                  <div
+                    class="order cditem7 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item7 forcheck"></p>
+                    <span class="position-absolute item7 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item7"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem8 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/p8.jpg"
+                class="card-img-top rounded-5 item8"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem8">adidas</p>
+                <h5 class="card-title my-1 fw-bold item8">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item8">36.99</div>
+                  <div
+                    class="order cditem8 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item8 forcheck"></p>
+                    <span class="position-absolute item8 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item8"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END PRODUCTS -->
+    <!-- START REPAIR SERVICES -->
+    <div
+      class="repair-services d-flex justify-content-center align-items-center"
+    >
+      <div class="content text-light text-center my-5">
+        <h4 class="fw-bold">Repair Services</h4>
+        <div class="fw-bold fs-1 my-4">
+          Up to
+          <span class="d-sm-none bg-danger text-light bg-opacity-75 px-2"
+            >70% Off</span
+          ><span class="d-none d-sm-inline">70% Off</span>-
+          <p class="d-sm-inline">All T-Shirts & Accessories</p>
+        </div>
+        <button class="fw-bold fs-5 px-4 py-2 border-0 rounded-1">
+          Explore More
+        </button>
+      </div>
+    </div>
+    <!-- END REPAIR SERVICES -->
+    <!-- START NEW ARRIVALS -->
+    <div class="new-arrivals my-5">
+      <div class="section-title text-center py-3">
+        <h1 class="fw-bold">New Arrivals</h1>
+        <h6 class="text-black-50">Summer Collection New Modern Design</h6>
+      </div>
+      <div class="container px-xl-5">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem9 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/n1.jpg"
+                class="card-img-top rounded-5 item9"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem9">adidas</p>
+                <h5 class="card-title my-1 fw-bold item9">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item9">9.99</div>
+                  <div
+                    class="order cditem9 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item9 forcheck"></p>
+                    <span class="position-absolute item9 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item9"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem10 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/n2.jpg"
+                class="card-img-top rounded-5 item10"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem10">adidas</p>
+                <h5 class="card-title my-1 fw-bold item10">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item10">19.99</div>
+                  <div
+                    class="order cditem10 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item10 forcheck"></p>
+                    <span class="position-absolute item10 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item10"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem11 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/n3.jpg"
+                class="card-img-top rounded-5 item11"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem11">adidas</p>
+                <h5 class="card-title my-1 fw-bold item11">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item11">15.99</div>
+                  <div
+                    class="order cditem11 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item11 forcheck"></p>
+                    <span class="position-absolute item11 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item11"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem12 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/n4.jpg"
+                class="card-img-top rounded-5 item12"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem12">adidas</p>
+                <h5 class="card-title my-1 fw-bold item12">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item12">16.99</div>
+                  <div
+                    class="order cditem12 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item12 forcheck"></p>
+                    <span class="position-absolute item12 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item12"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem13 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/n5.jpg"
+                class="card-img-top rounded-5 item13"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem13">adidas</p>
+                <h5 class="card-title my-1 fw-bold item13">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item13">10.99</div>
+                  <div
+                    class="order cditem13 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item13 forcheck"></p>
+                    <span class="position-absolute item13 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item13"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem14 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/n6.jpg"
+                class="card-img-top rounded-5 item14"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem14">adidas</p>
+                <h5 class="card-title my-1 fw-bold item14">Short</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item14">20.99</div>
+                  <div
+                    class="order cditem14 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item14 forcheck"></p>
+                    <span class="position-absolute item14 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item14"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem15 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/n7.jpg"
+                class="card-img-top rounded-5 item15"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem15">adidas</p>
+                <h5 class="card-title my-1 fw-bold item15">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item15">29.99</div>
+                  <div
+                    class="order cditem15 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item15 forcheck"></p>
+                    <span class="position-absolute item15 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item15"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card cditem16 p-2 rounded-5 my-3 mx-auto"
+              style="max-width: 18rem"
+            >
+              <img
+                src="imgs/n8.jpg"
+                class="card-img-top rounded-5 item16"
+                alt=""
+              />
+              <div class="card-body px-2 pt-3 pb-2">
+                <p class="mb-1 cditem16">adidas</p>
+                <h5 class="card-title my-1 fw-bold item16">Shirt</h5>
+                <div class="icons star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div
+                  class="price-order d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div class="price fs-5 fw-bold item16">29.99</div>
+                  <div
+                    class="order cditem16 border border-1 rounded-circle position-relative"
+                  >
+                    <p class="position-absolute item16 forcheck"></p>
+                    <span class="position-absolute item16 arrowforcheck"></span>
+                    <i
+                      class="fa-solid fa-basket-shopping p-2 cart-icon item16"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END NEW ARRIVALS -->
+    <!-- START SLIDES -->
+    <div class="slides my-5">
+      <div class="container px-xl-5">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="big-box slide1 py-5 ps-4">
+              <div class="content text-white py-5">
+                <h4>crazy deals</h4>
+                <h2 class="fw-bold">buy 1 get 1 free</h2>
+                <p>The best classic dress is on sale at cara</p>
+                <button
+                  class="border border-1 border-white bg-transparent text-white px-3 py-2 fs-5"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="big-box slide2 py-5 ps-4">
+              <div class="content text-white py-5">
+                <h4>spring/summer</h4>
+                <h2 class="fw-bold">upcomming season</h2>
+                <p>The best classic dress is on sale at cara</p>
+                <button
+                  class="border border-1 border-white bg-transparent text-white px-3 py-2 fs-5"
+                >
+                  Collection
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="small-box slide3 py-5 ps-4">
+              <div class="content text-white py-4">
+                <h2 class="fw-bold text-uppercase">seasonal sale</h2>
+                <p class="fs-5 fw-bold">Winter Collection 50% OFF</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="small-box slide4 py-5 ps-4">
+              <div class="content text-white py-4">
+                <h2 class="fw-bold text-uppercase">new footwear collection</h2>
+                <p class="fs-5 fw-bold">Spring / Summer 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="small-box slide5 py-5 ps-4">
+              <div class="content text-white py-4">
+                <h2 class="fw-bold text-uppercase">t-shirts</h2>
+                <p class="fs-5 fw-bold">New Trendy Prints</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SLIDES -->
+    <!-- START SIGN UP -->
+    <div class="sign-up py-5">
+      <div class="container px-xl-5">
+        <div
+          class="row d-none d-md-flex justify-content-center align-items-center"
+        >
+          <div class="col-md-6">
+            <div class="info">
+              <h2 class="fw-bold text-light">Sign Up For Newsletters</h2>
+              <p class="text-white-50">
+                Get E-mail updates about our latest shop and
+                <span>special offers</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form d-flex justify-content-end">
+              <input
+                class="ps-4 pe-3 py-2 border-0 rounded-start"
+                type="email"
+                placeholder="Your email address"
+              />
+              <input
+                class="px-3 py-2 text-white fw-bold border-0 rounded-end"
+                type="submit"
+                value="Sign Up"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="row d-flex d-md-none flex-column justify-content-center align-items-center"
+        >
+          <div class="col-md-6">
+            <div class="info text-center">
+              <h2 class="fw-bold text-light">Sign Up For Newsletters</h2>
+              <p class="text-white-50">
+                Get E-mail updates about our latest shop and
+                <span>special offers</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form d-flex justify-content-center">
+              <input
+                class="ps-3 pe-0 py-2 border-0 rounded-start"
+                type="email"
+                placeholder="Your email address"
+              />
+              <input
+                class="px-2 py-2 text-white fw-bold border-0 rounded-end"
+                type="submit"
+                value="Sign Up"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SIGN UP -->
+    <!-- START FOOTER -->
+    <footer class="my-5">
+      <div class="container py-4">
+        <div class="row px-sm-5 px-md-0 text-center text-md-start">
+          <div class="col-sm-12 col-md-8 col-lg-4">
+            <div class="contact-part">
+              <div class="contact">
+                <a href="#"><img src="imgs/logo.png" alt="" /></a>
+                <h4 class="fw-bold mt-4 mb-3">Contact Us</h4>
+                <p class="mb-1">
+                  <span class="fw-bold">Address:</span> 562 Wellingtom Road.
+                  Street32. San Francisco
+                </p>
+                <p class="mb-1">
+                  <span class="fw-bold">Phone:</span> +01019103897/
+                  (+9)0123456789
+                </p>
+                <p class="mb-1">
+                  <span class="fw-bold">Hours:</span> 10:00 - 18:00. Mon - Sat
+                </p>
+              </div>
+              <div class="follow-us">
+                <h4 class="fw-bold mt-4">Follow Us</h4>
+                <a href="#"
+                  ><i class="facebook pe-2 fs-5 fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#"
+                  ><i class="twitter pe-2 fs-5 fa-brands fa-twitter"></i
+                ></a>
+                <a href="#"
+                  ><i class="instagram pe-2 fs-5 fa-brands fa-instagram"></i
+                ></a>
+                <a href="#"
+                  ><i class="pinterest pe-2 fs-5 fa-brands fa-pinterest-p"></i
+                ></a>
+                <a href="#"
+                  ><i class="youtube pe-2 fs-5 fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <h4 class="mb-4 fw-bold">About</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Delivery Information</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-2 order-sm-0 order-md-4 order-lg-0"
+          >
+            <h4 class="mb-4 fw-bold">My Account</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">View Vart</a></li>
+              <li><a href="#">My Wishlist</a></li>
+              <li><a href="#">Track My Order</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-4">
+            <div class="app-part">
+              <div class="install-app">
+                <h4 class="fw-bold mb-4">Install App</h4>
+                <p class="pt-1">From App Store or Google Play</p>
+                <div class="app-img my-3">
+                  <a href="#"
+                    ><img
+                      class="border border-2 rounded-2 my-1"
+                      src="imgs/app.jpg"
+                      alt=""
+                  /></a>
+                  <a href="#"
+                    ><img
+                      class="border border-2 rounded-2 my-1"
+                      src="imgs/play.jpg"
+                      alt=""
+                  /></a>
+                </div>
+                <p>Secured Payment Gateways</p>
+                <div class="payment-img mt-4">
+                  <a href="#"><img src="imgs/pay.png" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+new WOW().init();
+</script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
